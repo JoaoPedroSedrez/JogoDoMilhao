@@ -9,6 +9,7 @@ public class JogoDoMilhao {
     private boolean usouEliminar = false;
     private boolean usouUniversitarios = false;
     private boolean usouEspecialista = false;
+    private int perguntasRespondidas = 0;
 
 
     public JogoDoMilhao() {
@@ -22,7 +23,7 @@ public class JogoDoMilhao {
         String nomeJogador = sc.nextLine();
 
         try {
-            banco.carregarPerguntas("C:\\Users\\User\\IdeaProjects\\jogoDoMilhao\\src\\src\\perguntas.txt");
+            banco.carregarPerguntas("C:\\Users\\sedre\\IdeaProjects\\JogoDoMilhao\\src\\perguntas.txt");
             int pontos = 0;
             int dinheiro = 0;
 
@@ -39,7 +40,7 @@ public class JogoDoMilhao {
                     System.out.println(alt);
                 }
 
-                while (true) {
+                while (perguntasRespondidas <= 15) {
                     System.out.print("\nDigite a letra da resposta (a/b/c/d) ou:\n");
                     if (!usouPular) System.out.println("[1] Usar ajuda - Pular Pergunta");
                     if (!usouEliminar) System.out.println("[2] Usar ajuda - Eliminar duas alternativas");
@@ -71,6 +72,7 @@ public class JogoDoMilhao {
                             pontos++;
                             dinheiro = valoresPremios[pontos - 1];
                             System.out.println("Certa resposta!");
+                            perguntasRespondidas += 1;
                         } else {
                             System.out.println("Resposta errada!");
                             System.out.println("A resposta correta era: " + p.getRespostaCorretaLetra());
