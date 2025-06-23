@@ -1,0 +1,3 @@
+Jogador João- Pontos: 12 - Dinheiro: R$ 150000
+Jogador Otávio - Pontos: 15 - Dinheiro: R$ 1000000
+Jogador Victor - Pontos: 3 - Dinheiro: R$ 2000
