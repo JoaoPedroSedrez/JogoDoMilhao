@@ -1,5 +1,5 @@
 ## 🎮 Jogo do Milhão - Java (Terminal)
-Projeto em Java que simula o clássico "Jogo do Milhão", rodando no terminal, com foco em Programação Orientada a Objetos (POO).
+Projeto em Java para faculdade, que simula o clássico "Jogo do Milhão", rodando no terminal, com foco em Programação Orientada a Objetos (POO).
 
 ## ✅ Funcionalidades:
 - 15 perguntas de múltipla escolha, lidas de um arquivo .txt
